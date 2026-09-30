@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nilüfer Güzellik Salonu | Saç, cilt ve tırnak bakımı</title>
+<meta name="description" content="Nilüfer Güzellik Salonu'nda saç kesimi, boya, cilt bakımı ve manikür hizmetleri. Fiyat listesini inceleyin, WhatsApp'tan randevu alın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF1EE; --mist:#F3DEDA; --rose:#E9A9B0; --orchid:#8E3B6B; --plum:#3A1F33;
+    --head:'Young Serif',Georgia,serif; --body:'Hanken Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--bg);color:var(--plum);line-height:1.65;font-size:1.05rem}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--orchid);outline-offset:3px}
+  .wrap{width:min(1040px,92%);margin-inline:auto}
+
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0}
+  .logo{font-family:var(--head);font-size:1.4rem;text-decoration:none}
+  .nav a.link{text-decoration:none;margin-left:1.5rem;font-weight:600}
+  .nav a.link:hover{color:var(--orchid)}
+
+  .hero{padding:2rem 0 5rem}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+  h1{font-family:var(--head);font-weight:400;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.08}
+  .lead{margin:1.3rem 0 2rem;max-width:36ch;font-size:1.15rem}
+  .btn{display:inline-block;background:var(--orchid);color:#fff;font-weight:600;padding:.95rem 1.6rem;border-radius:999px;text-decoration:none}
+  .btn:hover{background:var(--plum)}
+  .arch{aspect-ratio:4/5;border-radius:999px 999px 1.5rem 1.5rem;background:
+      radial-gradient(circle at 50% 78%,var(--bg) 0 14%,transparent 14.5%),
+      linear-gradient(170deg,var(--rose),var(--orchid));
+      position:relative;max-width:360px;margin-inline:auto;width:100%}
+  .arch::after{content:"";position:absolute;inset:-14px;border:2px solid var(--rose);border-radius:999px 999px 2rem 2rem;opacity:.7}
+
+  section{padding:4.5rem 0}
+  h2{font-family:var(--head);font-weight:400;font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin-bottom:.8rem}
+  .prices{background:var(--mist)}
+  .prices p.note{margin-bottom:1.5rem;max-width:52ch}
+  table{width:100%;border-collapse:collapse;background:var(--bg);border-radius:1rem;overflow:hidden}
+  caption{text-align:left;padding-bottom:.6rem;font-size:.95rem}
+  th,td{text-align:left;padding:1rem 1.2rem;border-bottom:1px solid var(--mist)}
+  thead th{background:var(--plum);color:var(--bg);font-weight:600}
+  td:last-child,th:last-child{text-align:right;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:0}
+  td small{display:block;opacity:.75}
+
+  .why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+  .why ul{list-style:none;padding:0}
+  .why li{padding:.9rem 0;border-bottom:1px solid var(--rose)}
+  .why li:first-child{padding-top:0}
+  .why strong{display:block;font-family:var(--head);font-weight:400;font-size:1.15rem}
+
+  .book{background:var(--plum);color:var(--bg);text-align:center}
+  .book p{max-width:44ch;margin:0 auto 1.6rem}
+  .book .btn{background:var(--rose);color:var(--plum)}
+  .book .btn:hover{background:#fff}
+  .hours{margin-top:1.6rem;font-size:.95rem;opacity:.85}
+
+  footer{padding:1.4rem 0;font-size:.9rem;text-align:center;background:var(--bg)}
+
+  @media (max-width:800px){
+    .hero .wrap,.why .wrap{grid-template-columns:1fr;gap:2.5rem}
+    .arch{max-width:260px}
+    .nav a.link{display:none}
+    section{padding:3rem 0}
+    th,td{padding:.8rem .7rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">Nilüfer</a>
+    <nav aria-label="Ana menü">
+      <a class="link" href="#fiyatlar">Fiyatlar</a>
+      <a class="link" href="#randevu">Randevu</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Kendinize ayırdığınız bir saat.</h1>
+        <p class="lead">Saç, cilt ve tırnak bakımı tek bir yerde. Acele yok, sıra yok, sadece randevunuz var.</p>
+        <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20randevu%20almak%20istiyorum." rel="noopener">WhatsApp'tan randevu al</a>
+      </div>
+      <div class="arch" role="img" aria-label="Kemer biçiminde süslü çerçeve"></div>
+    </div>
+  </div>
+
+  <section class="prices" id="fiyatlar">
+    <div class="wrap">
+      <h2>Fiyat listesi</h2>
+      <p class="note">Süreler ortalamadır. Saç boyu ve yoğunluğuna göre fiyat değişebilir, randevuda net fiyatı söyleriz.</p>
+      <table>
+        <caption>Salon hizmetleri, süre ve başlangıç fiyatları</caption>
+        <thead><tr><th scope="col">Hizmet</th><th scope="col">Süre</th><th scope="col">Fiyat</th></tr></thead>
+        <tbody>
+          <tr><td>Saç kesimi ve fön</td><td>60 dk</td><td>450 TL</td></tr>
+          <tr><td>Dip boya<small>Boya dahil, bakım ayrı</small></td><td>90 dk</td><td>900 TL</td></tr>
+          <tr><td>Cilt bakımı</td><td>75 dk</td><td>700 TL</td></tr>
+          <tr><td>Manikür</td><td>45 dk</td><td>300 TL</td></tr>
+          <tr><td>Kaş şekillendirme</td><td>20 dk</td><td>200 TL</td></tr>
+          <tr><td>Gelin başı</td><td>Görüşülür</td><td>Fiyat için yazın</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <div>
+        <h2>Neden Nilüfer?</h2>
+        <p>Küçük bir salonuz ve bilerek küçük kalıyoruz. Aynı anda birkaç misafirle ilgileniyoruz, böylece her randevuya vakit kalıyor.</p>
+      </div>
+      <ul>
+        <li><strong>Randevuya sadık kalırız</strong>Saatinizde başlarız, beklemezsiniz.</li>
+        <li><strong>Ürünleri baştan söyleriz</strong>Kullandığımız boya ve bakım ürünlerini sorabilirsiniz.</li>
+        <li><strong>Önce konuşuruz</strong>Ne istediğinizi dinler, size yakışanı birlikte seçeriz.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="book" id="randevu">
+    <div class="wrap">
+      <h2>Randevu için bir mesaj yeter</h2>
+      <p>Hizmeti ve size uyan günü yazın, aynı gün içinde dönüş yapalım.</p>
+      <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20randevu%20almak%20istiyorum." rel="noopener">WhatsApp'tan yaz</a>
+      <p class="hours">Salı - Cumartesi, 10.00 - 19.00. Örnek Sokak No: 8, Kadıköy / İstanbul</p>
+    </div>
+  </section>
+</main>
+
+<footer>Bu site bir örnek çalışmadır. Firma, adres ve fiyatlar kurgusaldır.</footer>
+
+</body>
+</html>

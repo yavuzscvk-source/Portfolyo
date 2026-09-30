@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yıldız Oto Servis | Periyodik bakım, fren ve lastik hizmetleri</title>
+<meta name="description" content="Yıldız Oto Servis'te yağ değişimi, periyodik bakım, fren ve lastik işlemleri. Fiyatı önceden söyler, onayınız olmadan işlem yapmayız. WhatsApp'tan randevu alın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#E9EDF0; --white:#fff; --ink:#14202B; --steel:#5B6B78; --orange:#E85A0C; --line:#C9D1D7;
+    --head:'Barlow Condensed','Arial Narrow',system-ui,sans-serif; --body:'Barlow',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;font-size:1.05rem}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+  .wrap{width:min(1080px,92%);margin-inline:auto}
+
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0;border-bottom:2px solid var(--ink)}
+  .logo{font-family:var(--head);font-weight:800;font-size:1.7rem;text-decoration:none;letter-spacing:.01em}
+  .logo span{color:var(--orange)}
+  .nav a.tel{font-weight:600;text-decoration:none}
+  .nav a.tel:hover{color:var(--orange)}
+
+  .hero{padding:3.5rem 0 4rem}
+  .hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:end}
+  h1{font-family:var(--head);font-weight:800;font-size:clamp(3rem,9vw,6.6rem);line-height:.92;letter-spacing:-.01em}
+  h1 em{font-style:normal;background:var(--orange);color:var(--white);padding:0 .18em;display:inline-block;transform:rotate(-1.5deg)}
+  .hero p{max-width:34ch;font-size:1.15rem}
+  .btn{display:inline-block;margin-top:1.5rem;background:var(--ink);color:var(--white);font-weight:600;padding:1rem 1.6rem;text-decoration:none;border-radius:.3rem}
+  .btn:hover{background:var(--orange)}
+
+  section{padding:4rem 0}
+  h2{font-family:var(--head);font-weight:800;font-size:clamp(2rem,5vw,3rem);line-height:1;margin-bottom:.7rem}
+  .sub{color:var(--steel);max-width:50ch;margin-bottom:1.6rem}
+
+  .price{background:var(--white)}
+  .rows{list-style:none;padding:0;border-top:2px solid var(--ink)}
+  .rows li{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+  .rows b{font-family:var(--head);font-size:1.5rem;font-weight:800}
+  .rows small{display:block;color:var(--steel)}
+  .rows .p{font-family:var(--head);font-weight:800;font-size:1.6rem;white-space:nowrap}
+
+  .steps ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:s}
+  .steps li{counter-increment:s;border-top:4px solid var(--orange);padding-top:.8rem}
+  .steps li::before{content:counter(s);font-family:var(--head);font-weight:800;font-size:2.2rem;color:var(--orange);line-height:1}
+  .steps strong{display:block;font-family:var(--head);font-size:1.4rem;font-weight:800}
+  .steps span{color:var(--steel);font-size:.98rem}
+
+  .cta{background:var(--orange);color:var(--white)}
+  .cta .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:center}
+  .cta h2{margin:0}
+  .cta p{margin-top:.4rem}
+  .cta .btn{background:var(--ink);margin:0}
+  .cta .btn:hover{background:var(--white);color:var(--ink)}
+
+  footer{padding:1.5rem 0;font-size:.9rem;color:var(--steel)}
+
+  @media (max-width:800px){
+    .hero .wrap{grid-template-columns:1fr;gap:1.5rem}
+    .steps ol{grid-template-columns:1fr 1fr}
+    section{padding:3rem 0}
+    .nav a.tel{font-size:.95rem}
+  }
+  @media (max-width:420px){ .steps ol{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">Yıldız <span>Oto Servis</span></a>
+    <a class="tel" href="tel:+905550000000">0555 000 00 00</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Sabah bırakın, akşam <em>hazır.</em></h1>
+      <div>
+        <p>Periyodik bakım, fren ve lastik işlemleri. Fiyatı önceden söyler, onayınız olmadan hiçbir işlem yapmayız.</p>
+        <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20servis%20randevusu%20almak%20istiyorum." rel="noopener">WhatsApp'tan randevu al</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="price" id="fiyatlar">
+    <div class="wrap">
+      <h2>Sık yapılan işler</h2>
+      <p class="sub">Fiyatlar araç modeline göre değişir. Aracı görmeden kesin fiyat vermiyoruz, ama aşağıdaki rakamlar başlangıç için fikir verir.</p>
+      <ul class="rows">
+        <li><div><b>Yağ ve filtre değişimi</b><small>Motor yağı, yağ filtresi, işçilik dahil</small></div><span class="p">1.800 TL</span></li>
+        <li><div><b>Ön fren balatası</b><small>Balata takımı ve işçilik</small></div><span class="p">2.400 TL</span></li>
+        <li><div><b>Periyodik bakım</b><small>Yağ, üç filtre ve genel kontrol</small></div><span class="p">3.900 TL</span></li>
+        <li><div><b>Lastik değişimi ve balans</b><small>Dört lastik için</small></div><span class="p">900 TL</span></li>
+        <li><div><b>Akü değişimi</b><small>Akü ayrıca, takma ücretsiz</small></div><span class="p">Araca göre</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <h2>Nasıl çalışıyoruz?</h2>
+      <p class="sub">Sürpriz fatura istemiyoruz, siz de istemezsiniz.</p>
+      <ol>
+        <li><strong>Randevu</strong><span>WhatsApp'tan gün ve saat seçin.</span></li>
+        <li><strong>Kontrol</strong><span>Aracı inceler, yapılacakları listeleriz.</span></li>
+        <li><strong>Onay</strong><span>Fiyatı söyleriz, siz onaylarsanız başlarız.</span></li>
+        <li><strong>Teslim</strong><span>Değişen parçaları size gösteririz.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta" id="randevu">
+    <div class="wrap">
+      <div>
+        <h2>Aracınıza bir bakalım</h2>
+        <p>Pazartesi - Cumartesi, 08.30 - 18.30. Örnek Sanayi Sitesi, 14. Blok No: 5</p>
+      </div>
+      <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20servis%20randevusu%20almak%20istiyorum." rel="noopener">Randevu al</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Bu site bir örnek çalışmadır. Firma, adres, telefon ve fiyatlar kurgusaldır.</div>
+</footer>
+
+</body>
+</html>

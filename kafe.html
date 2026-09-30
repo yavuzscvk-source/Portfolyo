@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çınar Kahve | Moda'da taze kavrulmuş kahve ve tost</title>
+<meta name="description" content="Çınar Kahve, Moda'da her sabah taze kavrulmuş kahve, sıcak tost ve ev yapımı tatlılar sunan mahalle kafesi. Menüyü inceleyin, masa ayırtın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --board:#1F3B33; --board-2:#2A4C41; --chalk:#F1F4EC; --yolk:#F3C74B; --brick:#B8432A; --ink:#15251F;
+    --head:'Bricolage Grotesque',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--chalk);line-height:1.6;font-size:1.05rem}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--yolk);outline-offset:3px}
+  .wrap{width:min(1080px,92%);margin-inline:auto}
+
+  header.top{background:var(--board);color:var(--chalk)}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0}
+  .logo{font-family:var(--head);font-weight:800;font-size:1.4rem;text-decoration:none}
+  .nav a.link{text-decoration:none;margin-left:1.4rem;font-weight:600}
+  .nav a.link:hover{color:var(--yolk)}
+
+  .hero{background:var(--board);color:var(--chalk);padding:2rem 0 4.5rem}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center}
+  h1{font-family:var(--head);font-weight:800;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em}
+  .lead{margin:1.3rem 0 2rem;max-width:34ch;color:#DDE6DA;font-size:1.15rem}
+  .btn{display:inline-block;background:var(--yolk);color:var(--ink);font-weight:600;padding:.95rem 1.5rem;border-radius:.6rem;text-decoration:none}
+  .btn:hover{background:#FFD968}
+  .btn.ghost{background:transparent;color:var(--chalk);border:2px solid var(--chalk);margin-left:.6rem}
+  .btn.ghost:hover{background:var(--chalk);color:var(--ink)}
+
+  .board{background:var(--board-2);border:3px solid var(--yolk);border-radius:.4rem;padding:1.6rem 1.6rem 1.2rem;box-shadow:8px 8px 0 rgba(0,0,0,.25)}
+  .board h2{font-family:var(--head);font-size:1.5rem;margin-bottom:.6rem;color:var(--yolk)}
+  .board ul{list-style:none;padding:0}
+  .board li{display:flex;align-items:baseline;gap:.5rem;padding:.35rem 0}
+  .board li i{flex:1;border-bottom:2px dotted rgba(241,244,236,.45);transform:translateY(-.25rem)}
+  .board li b{font-weight:600}
+  .board p{font-size:.9rem;color:#C5D3C7;margin-top:.8rem}
+
+  section{padding:4.5rem 0}
+  h2.sec{font-family:var(--head);font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;margin-bottom:1.2rem}
+  .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+  .about p+p{margin-top:1rem}
+  .facts{border-left:5px solid var(--brick);padding-left:1.4rem}
+  .facts dt{font-family:var(--head);font-weight:800;font-size:1.15rem;margin-top:1rem}
+  .facts dt:first-child{margin-top:0}
+  .facts dd{margin:0}
+
+  .visit{background:var(--yolk)}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .hours{list-style:none;padding:0}
+  .hours li{display:flex;justify-content:space-between;border-bottom:2px solid rgba(21,37,31,.2);padding:.55rem 0}
+  .visit .btn{background:var(--ink);color:var(--chalk);margin-top:1.4rem}
+  .visit .btn:hover{background:var(--board-2)}
+
+  footer{background:var(--board);color:#C5D3C7;padding:1.6rem 0;font-size:.9rem}
+
+  @media (max-width:800px){
+    .hero .wrap,.about .wrap,.visit .wrap{grid-template-columns:1fr;gap:2rem}
+    .nav a.link{display:none}
+    .btn.ghost{margin:.7rem 0 0}
+    section{padding:3rem 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="#">Çınar Kahve</a>
+    <nav aria-label="Ana menü">
+      <a class="link" href="#hakkimizda">Hakkımızda</a>
+      <a class="link" href="#ziyaret">Ziyaret</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Sabah kahvesi, öğlen tostu.</h1>
+        <p class="lead">Kahvelerimizi her sabah kendimiz kavuruyoruz. Moda'da bir masa sizi bekliyor.</p>
+        <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20masa%20ay%C4%B1rtmak%20istiyorum." rel="noopener">WhatsApp'tan masa ayırt</a>
+        <a class="btn ghost" href="#ziyaret">Nerede, kaçta?</a>
+      </div>
+      <aside class="board" aria-label="Menü">
+        <h2>Bugünün menüsü</h2>
+        <ul>
+          <li>Filtre kahve <i></i> <b>85 TL</b></li>
+          <li>Flat white <i></i> <b>105 TL</b></li>
+          <li>Latte <i></i> <b>110 TL</b></li>
+          <li>Türk kahvesi <i></i> <b>75 TL</b></li>
+          <li>Soğuk demleme <i></i> <b>115 TL</b></li>
+          <li>Kaşarlı tost <i></i> <b>130 TL</b></li>
+          <li>Sucuklu tost <i></i> <b>150 TL</b></li>
+          <li>Ev yapımı cheesecake <i></i> <b>140 TL</b></li>
+        </ul>
+        <p>Fiyatlar örnektir.</p>
+      </aside>
+    </div>
+  </div>
+
+  <section class="about" id="hakkimizda">
+    <div class="wrap">
+      <div>
+        <h2 class="sec">Mahallenin kahvecisi</h2>
+        <p>Çınar Kahve, tek bir fikirle açıldı: kahve taze içildiğinde daha güzel. Çekirdekleri haftada iki kez küçük partilerle kavuruyor, aynı gün demliyoruz.</p>
+        <p>Tostlarımızı sipariş üzerine hazırlıyor, tatlılarımızı mutfakta kendimiz yapıyoruz. Dizüstü bilgisayarla gelenlere de, sohbete gelenlere de yer var.</p>
+      </div>
+      <dl class="facts">
+        <dt>Çekirdek</dt><dd>Haftada iki kez taze kavrulur.</dd>
+        <dt>Sütler</dt><dd>İnek, yulaf ve badem sütü seçeneği.</dd>
+        <dt>Wi-Fi</dt><dd>Ücretsiz ve şifresi masada yazılı.</dd>
+        <dt>Evcil hayvan</dt><dd>Bahçe masalarında kabul ediyoruz.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="visit" id="ziyaret">
+    <div class="wrap">
+      <div>
+        <h2 class="sec">Çalışma saatleri</h2>
+        <ul class="hours">
+          <li><span>Pazartesi - Cuma</span><b>08.00 - 22.00</b></li>
+          <li><span>Cumartesi</span><b>09.00 - 23.00</b></li>
+          <li><span>Pazar</span><b>09.00 - 21.00</b></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="sec">Adres</h2>
+        <address style="font-style:normal">Örnek Sokak No: 12<br>Moda, Kadıköy / İstanbul</address>
+        <a class="btn" href="https://wa.me/905550000000?text=Merhaba%2C%20masa%20ay%C4%B1rtmak%20istiyorum." rel="noopener">Masa ayırt</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Bu site bir örnek çalışmadır. Firma, adres ve fiyatlar kurgusaldır.</div>
+</footer>
+
+</body>
+</html>
